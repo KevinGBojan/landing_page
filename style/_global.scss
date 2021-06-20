@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Manrope', sans-serif;
+}
+
+$main-background: #080C20;
+$icons-background: #093F68;
+$accent: #3EE9E5;
+
+body {
+    background-color: $main-background;
+    color: white;
+}
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+// ul li:before {
+//     content: '✓';
+// }
