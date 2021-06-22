@@ -63,7 +63,7 @@ ul {
   margin-top: 2rem;
 }
 
-.squiggle {
+.scroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,6 +186,19 @@ ul {
   color: #777F98;
   font-size: 1.5rem;
   font-weight: 200;
+}
+
+.pricing .pricing-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .pricing .card {
@@ -366,14 +379,12 @@ ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
     height: 35.7rem;
-    max-width: 110.8rem;
     background: url("/assets/illustration-hero-left.svg"), url("/assets/illustration-hero-right.svg"), url("/assets/bg-hero-squiggle.svg");
     background-position: left, right, center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position-x: -40%, 138%, 50%;
+    background-position-x: -20%, 120%, 50%;
   }
   .hero-text {
     width: 50%;
@@ -448,6 +459,139 @@ ul {
   }
   .get-notified #submit {
     width: 14rem;
+  }
+}
+
+@media (min-width: 1120px) {
+  .hero {
+    height: 45.9rem;
+    background-position-x: -5%, 105%, center;
+  }
+  .hero-text {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+    margin-top: -30rem;
+    margin-bottom: 5rem;
+  }
+  .hero-text h2 {
+    width: 40%;
+    font-size: 4.8rem;
+  }
+  .hero-text h5 {
+    width: 37.5%;
+  }
+  .benefits {
+    width: 77%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .benefits .benefit {
+    height: 33.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+  }
+  .illustration {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    min-width: 16rem;
+    min-height: 16.4rem;
+    border-radius: 2rem;
+  }
+  .illustration img {
+    width: 8.8rem;
+    height: 10.6rem;
+  }
+  .illustration-freedom img {
+    width: 7.4rem;
+    height: 8.9rem;
+  }
+  .illustration-lifestyle img {
+    width: 8rem;
+    height: 9.4rem;
+  }
+  .illustration-remote img {
+    width: 10.4rem;
+    height: 7.4rem;
+  }
+  .benefit-passions,
+  .benefit-lifestyle,
+  .benefit-freedom,
+  .benefit-remote {
+    width: 25.5rem;
+  }
+  .benefit-freedom,
+  .benefit-remote {
+    margin-top: 4.8rem;
+  }
+  .benefit-passions,
+  .benefit-lifestyle {
+    margin-left: 0rem;
+  }
+  .text {
+    margin: 2rem 2rem 0 0;
+  }
+  .text p {
+    width: 23.5rem;
+  }
+  .text h3 {
+    width: 25.5rem;
+  }
+  .pricing {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 64%;
+  }
+  .pricing .pricing-head {
+    width: 54rem;
+    margin-bottom: 5rem;
+  }
+  .pricing .pricing-head h2 {
+    font-size: 3.2rem;
+  }
+  .pricing .pricing-cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .pricing .pricing-card1,
+  .pricing .pricing-card2 {
+    height: 42.5rem;
+    width: 44.5rem;
+    margin: 5rem;
+  }
+  .pricing .pricing-card2 {
+    height: 44.9rem;
+  }
+  .get-notified {
+    background-size: 100%;
+    height: 22.8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
