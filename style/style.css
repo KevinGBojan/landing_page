@@ -269,7 +269,7 @@ ul {
 }
 
 .pricing .pricing-card1 h5 {
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 }
 
 .pricing .pricing-card1 .icon1 {
@@ -411,10 +411,23 @@ ul {
             align-items: center;
     text-align: center;
     margin-bottom: 4rem;
+    text-align: left;
+  }
+  .benefits .benefit h3 {
+    margin-left: 5.5rem;
+    font-size: 1.8rem;
+    font-weight: 800;
+  }
+  .benefits .benefit p {
+    margin-left: 5.5rem;
   }
   .benefit-passions,
   .benefit-lifestyle {
-    padding-left: 5.8rem;
+    margin-left: 5.8rem;
+  }
+  .text-passions,
+  .text-lifestyle {
+    min-width: 34rem;
   }
   .pricing {
     width: 75%;
