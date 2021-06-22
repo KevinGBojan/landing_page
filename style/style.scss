@@ -10,7 +10,7 @@
 
 .hero {
     height: 23rem;
-    max-width: 37.5rem;
+    min-width: 37.5rem;
     background: url("/assets/illustration-hero-mobile.png");
     background-size: cover;
 }
@@ -78,8 +78,8 @@
     align-items: center;
     justify-content: center;
     background-color: $icons-background;
-    width: 12rem;
-    height: 12.4rem;
+    min-width: 12rem;
+    min-height: 12.4rem;
     border-radius: 2rem;
 
     img {
@@ -108,6 +108,7 @@
     margin: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     .pricing-head {
         text-align: center;
@@ -129,6 +130,7 @@
         height: 43.6rem;
         border-radius: .8rem;
         margin-bottom: 6rem;
+        max-width: 44.5rem;
 
         h4 {
             font-size: 1.8rem;
@@ -211,16 +213,19 @@
 }
 
 .get-notified {
+    width: 100%;
     background: url("/assets/bg-footer-squiggle.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 120%;
     height: 22rem;
     margin-bottom: 10rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 
     h3 {
+        width: 60%;
         font-size: 2.4rem;
         text-align: center;
         font-weight: 800;
@@ -254,3 +259,108 @@
         color: #093F68;
     }
 }
+
+@media (min-width: 768px) {
+    header {
+        width: 100%;
+        overflow: hidden;
+    }
+    .hero {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 35.7rem;
+        max-width: 110.8rem;
+        background: url("/assets/illustration-hero-left.svg"), url("/assets/illustration-hero-right.svg"), url("/assets/bg-hero-squiggle.svg");
+        background-position: left, right, center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: -40%, 138%, 50%;
+    }
+
+    .hero-text {
+        width: 50%;
+        margin: auto;
+        margin-top: -30rem;
+        margin-bottom: 5rem;
+    }
+
+    .benefits {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 5rem;
+    
+        .benefit {
+            height: 12.3rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+    }
+
+    .benefit-passions,
+    .benefit-lifestyle {
+        padding-left: 5.8rem;
+    }
+
+    .pricing {
+        width: 75%;
+    }
+    
+    .get-notified {
+        background-size: 140%;
+        background-position: 100%;
+        height: 14rem;
+    
+        form {
+            flex-direction: row;
+        }
+    
+        #email {
+            margin-right: 2rem;
+        }
+        
+        #submit {
+            width: 14rem;
+        }
+    }
+}
+
+
+
+// .benefits {
+//     width: 87.2%;
+//     margin: auto;
+//     margin-top: 10rem;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: space-around;
+
+//     .benefit {
+//         height: 25rem;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         text-align: center;
+//         margin-bottom: 4rem;
+
+//         h3 {
+//             margin: 1.8rem;
+//             font-size: 1.8rem;
+//             font-weight: 800;
+//         }
+
+//         p {
+//             color: #777F98;
+//             font-size: 1.5rem;
+//             font-weight: 200;
+//         }
+//     }
+// }

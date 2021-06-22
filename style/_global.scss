@@ -16,6 +16,8 @@ $accent: #3EE9E5;
 body {
     background-color: $main-background;
     color: white;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 @mixin flexCenter {
